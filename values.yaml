@@ -1,15 +1,15 @@
-replicas: 3
+replicas: 1
 
 image:
-  repository: microsoft/vsts-agent
+  repository: lenisha/vsts-agent-infrastructure
   tag: latest
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 resources:
   limits:
     cpu: 4
     memory: 8Gi
   requests:
-    cpu: 4
-    memory: 8Gi
+    cpu: 2
+    memory: 4Gi
   disk: "50Gi"
